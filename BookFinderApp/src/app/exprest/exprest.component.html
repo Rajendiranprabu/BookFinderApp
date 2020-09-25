@@ -1,0 +1,15 @@
+<input type="text" (keyup.enter)="insertPost(postTitle)" #postTitle class="form-control">
+
+<div class="container">
+    <div class="cols-xs-12">
+        <p>exprest works!</p>
+        <span class="pull-right">
+            <ul class=list-group>
+                <li *ngFor="let post of posts">
+                    {{post.title}}
+                </li>
+            </ul>
+        </span>
+    </div>
+
+</div>
